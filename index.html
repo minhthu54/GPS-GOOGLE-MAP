@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bản đồ OpenStreetMap với Leaflet và GPS</title>
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <style>
+        #map { height: 500px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+     <!-- Khung chứa các nút chức năng như Google Maps -->
+    <div id="map-controls" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
+    <input type="text" id="searchInput" placeholder="Tìm địa điểm..." style="padding:8px; width:180px; border-radius:20px; border:1px solid #ccc;"/>
+    <button id="locateBtn" style="padding:8px 16px; margin-left:8px; border-radius:20px; border:none; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,0.2); cursor:pointer;">📍 Vị trí của bạn</button>
+    <button id="routeBtn" style="padding:8px 16px; margin-left:8px; border-radius:20px; border:none; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,0.2); cursor:pointer;">🔎 Tìm đường đi</button>
+</div>
+
+    <script src="leaflet.js"></script>
+    <script src="api.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+</body>
+</html>
